@@ -1,1 +1,15 @@
-First Commit
+void main() {
+  for (int i = 0; i < 5; i++) {
+    print('hello ${i + 1}');
+  }
+}
+class Item {
+  late String itemName;
+  late int rate;
+  late int quantity;
+ 
+  Item({required this.itemName, required this.rate, required this.quantity});
+ 
+  String display()=>"Item Name: $itemName\nRate: $rate\nQuanatiy: $quantity";
+ 
+}
