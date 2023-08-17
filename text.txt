@@ -1,8 +1,11 @@
 void main() {
-  for (int i = 0; i < 5; i++) {
-    print('hello ${i + 1}');
-  }
+ 
+  var inv01 = Invoice(itemName:"Soap", rate:20, quantity:4);
+  String msg = inv01.display();
+  print(msg);
+ 
 }
+
 class Item {
   late String itemName;
   late int rate;
